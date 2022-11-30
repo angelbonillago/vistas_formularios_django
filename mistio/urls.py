@@ -15,11 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from blog.views import index_view,refrigeradora,index_view2,form_view #index_view es la vista basasa en fx
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')), #todas las rutas de mi app blog
-   
+    #path('blog/', include('blog.urls')), #todas las rutas de mi app blog
+
+    path('funciones/',index_view,name="home" ), #basada en funciones
+    
+    path("clases/", index_view2.as_view()), #basada en clases
+
+    path("form/", form_view, name="form"),
+    #path('refri/',refrigeradora,name="home" ),
 
 
 ]
