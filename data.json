@@ -1,0 +1,53 @@
+[
+{
+    "model":"blog.Prueba",
+    "fields":{
+        "nombre":"Lenovo",
+        "precio":2000,
+        "peso": "0kg",
+        "cpu": "Core e"
+        
+    }
+},
+{
+    "model":"blog.Prueba",
+    "fields":{
+        "nombre":"nueva",
+        "precio":2000,
+        "peso": "2kg",
+        "cpu": "Core e"
+        
+    }
+},
+{
+    "model":"blog.Prueba",
+    "fields":{
+        "nombre":"HP",
+        "precio":2000,
+        "peso": "0kg",
+        "cpu": "Core e"
+        
+    }
+},
+{
+    "model":"blog.Prueba",
+    "fields":{
+        "nombre":"DELL",
+        "precio":2000,
+        "peso": "0kg",
+        "cpu": "Core e"
+        
+    }
+},
+{
+    "model":"blog.Prueba",
+    "fields":{
+        "nombre":"Asus",
+        "precio":2000,
+        "peso": "0kg",
+        "cpu": "Core e"
+        
+    }
+}
+
+]

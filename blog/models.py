@@ -26,3 +26,8 @@ class Laptop(Producto):
     def __str__(self):
         return self.nombre+'  '+self.peso+'  '+self.cpu
   
+class Prueba(models.Model):
+    nombre=models.CharField(max_length=50)
+    precio=models.IntegerField()
+    peso=models.CharField(max_length=50)
+    cpu=models.CharField(max_length=50)
