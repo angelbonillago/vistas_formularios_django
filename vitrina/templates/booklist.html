@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Libros!{% endblock %}
+
+{% block tituloh1 %}Lista de libros de un JSON{% endblock %}
+
+{% block content %}
+<ul>
+    <!-- Iterate over object_list -->
+    {% for object in object_list %}
+    <!-- Display Objects -->
+
+    <div style='background-color : {% cycle "lightblue" "pink" "yellow" "coral" "grey" %} '>
+
+        {% if object.authors|length >= 30 %}
+            <li>{{ object.authors }}</li> 
+            
+        {% endif %}
+        
+        
+        
+
+      
+
+    </div>
+    <hr />
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>No hay objetos para mostrar.</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

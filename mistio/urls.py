@@ -28,5 +28,7 @@ urlpatterns = [
     path("form/", form_view, name="form"),
     #path('refri/',refrigeradora,name="home" ),
 
+    path('vitrina/', include('vitrina.urls')), #todas las rutas de mi app vitrina
+
 
 ]
